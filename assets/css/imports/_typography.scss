@@ -1,0 +1,38 @@
+// Mike’s CSS
+// These values are the minimum and maximum viewport sizes to apply the font scaling
+$min_width: 400;
+$max_width: 1000;
+// These values represent the range of fon-tsize to apply
+// These values effect the base font-size, headings and other elements will scale proportionally
+$min_font: 16;
+$max_font: 24;
+
+
+:root { font-size: #{$min_font}px; }
+// This part is a little bit ugly, I will explain what is going on in a blog post soon.
+@media (min-width: #{$min_width}px) and (max-width: #{$max_width}px){
+  :root {
+    font-size: calc( #{$min_font}px + (#{$max_font} - #{$min_font}) * ( (100vw - #{$min_width}px) / ( #{$max_width} - #{$min_width}) ));
+  }
+}
+@media (min-width: #{$max_width}px){
+   :root {
+     font-size: #{$max_font}px;
+   }
+}
+
+// Trent’s Riffing
+// now trying this for headings, though maybe there's a better way.
+$min_heading: 16;
+$max_heading: 22;
+
+@media (min-width: #{$min_width}px) and (max-width: #{$max_width}px){
+  .hero-content p {
+    font-size: calc( #{$min_heading}px + (#{$max_heading} - #{$min_heading}) * ( (100vw - #{$min_width}px) / ( #{$max_width} - #{$min_width}) ));
+  }
+}
+@media (min-width: #{$max_width}px){
+  .hero-content p {
+     font-size: #{$max_heading}px;
+   }
+}

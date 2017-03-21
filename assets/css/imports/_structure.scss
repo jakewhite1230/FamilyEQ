@@ -1,0 +1,16 @@
+html,body{
+  background-color: $haze;
+  height: 100%;
+  position: relative;
+}
+
+h1,h2,h3,h4,h5,h6,span,button, button a{
+  font-family: 'Open Sans', sans-serif;
+}
+p,li,a{
+  font-family: 'Roboto', sans-serif;
+}
+
+.orange-bold{
+  color: $deep-orange;
+}

@@ -1,0 +1,58 @@
+.point{
+  min-height: 500px;
+  .point-icon{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    object,
+    img{
+      width: 50%;
+      margin: auto;
+      display: block;
+    }
+  }
+  .point-content{
+    display: flex;
+    flex-direction: column;
+    h2{
+      align-content: flex-start;
+      width: 100%;
+      text-align: center;
+      color: $blue;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    h3{
+      align-content: center;
+      font-size: 18px;
+    }
+    p{
+      text-align: justify;
+      font-size: 18px;
+      align-content: flex-end;
+    }
+  }
+}
+
+.large-points{
+  padding: 25px 0px;
+  background-color: #fff;
+  .point-icon{
+    height: 325px;
+    object,
+    img{
+      width: 75%;
+      margin: auto;
+      display: block;
+    }
+  }
+}
+
+@media(max-width:768px){
+  .point{
+    min-height: auto;
+    .point-icon{
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.navbar-default {
+    background-color: #fff;
+    border-color: transparent;
+}
+
+.navbar{
+  margin-bottom: 0px;
+}
+
+
+.navbar-header{
+  width: 100%;
+  .navbar-brand{
+    height: auto;
+    display: block;
+    width: 100%;
+    object{
+      width: 250px;
+      margin: auto;
+      display: block;
+      img{
+        width: 250px;
+        margin: auto;
+        display: block;
+      }
+    }
+  }
+
+}

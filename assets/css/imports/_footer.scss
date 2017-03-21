@@ -1,0 +1,20 @@
+footer{
+  height: 250px;
+  background-color: $blue;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  p a{
+    color: #fff;
+    &:hover, &:active, &:focus{
+      text-decoration: none;
+      color: $orange;
+    }
+  }
+  .footer-content{
+    text-align: center;
+    .content-button{
+      margin: 15px;
+    }
+  }
+}
