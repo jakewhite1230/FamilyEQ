@@ -19,10 +19,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button> -->
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="index.php">
+                <span>
                 <object type="image/svg+xml" data="assets/img/FamilyEQ-Logo-svg.svg" alt="Family EQ Logo">
                   <img src="assets/img/FamilyEQ-Logo-png.png" alt="No SVG support for Family EQ Logo">
                 </object>
+              </span>
               </a>
         </div>
       <!--  <div id="navbar" class="navbar-collapse collapse">

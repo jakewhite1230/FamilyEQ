@@ -12,12 +12,16 @@
   width: 100%;
   .navbar-brand{
     height: auto;
-    display: block;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
     width: 100%;
     object{
       width: 250px;
       margin: auto;
       display: block;
+      position: relative;
+      z-index: -1;
       img{
         width: 250px;
         margin: auto;

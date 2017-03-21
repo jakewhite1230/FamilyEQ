@@ -38,12 +38,16 @@ p, li, a {
   width: 100%; }
   .navbar-header .navbar-brand {
     height: auto;
-    display: block;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
     width: 100%; }
     .navbar-header .navbar-brand object {
       width: 250px;
       margin: auto;
-      display: block; }
+      display: block;
+      position: relative;
+      z-index: -1; }
       .navbar-header .navbar-brand object img {
         width: 250px;
         margin: auto;
