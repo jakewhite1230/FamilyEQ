@@ -24,7 +24,7 @@ $max_font: 24;
 // Trent’s Riffing
 // now trying this for headings, though maybe there's a better way.
 $min_heading: 16;
-$max_heading: 22;
+$max_heading: 21;
 
 @media (min-width: #{$min_width}px) and (max-width: #{$max_width}px){
   .hero-content p {
@@ -34,5 +34,19 @@ $max_heading: 22;
 @media (min-width: #{$max_width}px){
   .hero-content p {
      font-size: #{$max_heading}px;
+   }
+}
+
+$header_min_heading: 18;
+$header_max_heading: 28;
+
+@media (min-width: #{$min_width}px) and (max-width: #{$max_width}px){
+  .hero h1 {
+    font-size: calc( #{$header_min_heading}px + (#{$header_max_heading} - #{$header_min_heading}) * ( (100vw - #{$min_width}px) / ( #{$max_width} - #{$min_width}) )) !important;
+  }
+}
+@media (min-width: #{$max_width}px){
+  .hero h1 {
+     font-size: #{$header_max_heading}px !important;
    }
 }

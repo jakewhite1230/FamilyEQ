@@ -31,21 +31,23 @@
 .hero-container{
   background-color: #fff;
   border-radius: 5px 5px 0px 0px;
-  height: 250px;
+  min-height: 250px;
   position: absolute;
   bottom: -50px;
+  display: flex;
   @media(max-width:768px){
     position: relative;;
     bottom: 0px;
     height: auto;
+    flex-direction: column;
   }
   @include dropshadow(15px, 0.15);
   .hero-content-block{
-    height: 100%;
+    min-height: 100%;
   }
   .hero-image{
     background-color: $orange;
-    height: 100%;
+    min-height: 100%;
     border-top-right-radius: 5px;
     background-size:cover;
     background-position: center center;

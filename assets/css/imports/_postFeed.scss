@@ -1,0 +1,30 @@
+.post{
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 15px 0px;
+  .post-image{
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 5px 5px 0px 0px;
+  }
+  .post-content{
+    padding: 15px;
+    .post-read-time{
+      color:$blue;
+      text-transform: uppercase;
+    }
+    .post-title{
+    text-transform: uppercase;
+    color: $blue;
+    }
+    .post-link a{
+      color: $blue;
+      text-transform: uppercase;
+      &:hover,&:active,&:focus{
+        text-decoration: none;
+        color: darken($blue, 10%);
+      }
+    }
+  }
+}
